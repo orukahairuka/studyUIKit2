@@ -8,9 +8,6 @@
 import UIKit
 
 class ReminderListViewController: UICollectionViewController {
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
-
     var dataSource: DataSource!
 
     override func viewDidLoad() {
@@ -20,16 +17,7 @@ class ReminderListViewController: UICollectionViewController {
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
 
-        //セルのデザインと内容を設定
-        let cellRegistration = UICollectionView.CellRegistration {
-            (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
-            //サンプルデータの取得
-            let reminder = Reminder.sampleData[indexPath.item]
-            var contentConfiguration = cell.defaultContentConfiguration()
-            //せるの内容を設定。セルのテキスト部分にリマインダーのtitleを設定する
-            contentConfiguration.text = reminder.title
-            cell.contentConfiguration = contentConfiguration
-        }
+        let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
 
         //データソースを作成
         dataSource = DataSource(collectionView: collectionView) {
@@ -37,6 +25,7 @@ class ReminderListViewController: UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
 
+        //UIを更新
         var snapshot = Snapshot()
         snapshot.appendSections([0])
         snapshot.appendItems(Reminder.sampleData.map { $0.title })

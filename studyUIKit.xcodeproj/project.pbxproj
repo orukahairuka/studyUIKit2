@@ -17,6 +17,8 @@
 		3BF56BF92D2945BD0000D910 /* studyUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56BF82D2945BD0000D910 /* studyUIKitUITests.swift */; };
 		3BF56BFB2D2945BD0000D910 /* studyUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56BFA2D2945BD0000D910 /* studyUIKitUITestsLaunchTests.swift */; };
 		3BF56C092D2949710000D910 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C082D2949710000D910 /* Reminder.swift */; };
+		3BF56C0B2D2959D60000D910 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C0A2D2959D60000D910 /* Date+Today.swift */; };
+		3BF56C0E2D295BAE0000D910 /* Controller+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C0D2D295BAE0000D910 /* Controller+DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3BF56BF82D2945BD0000D910 /* studyUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUIKitUITests.swift; sourceTree = "<group>"; };
 		3BF56BFA2D2945BD0000D910 /* studyUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BF56C082D2949710000D910 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		3BF56C0A2D2959D60000D910 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		3BF56C0D2D295BAE0000D910 /* Controller+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,7 @@
 				3BF56C072D2949470000D910 /*  Models */,
 				3BF56BD72D2945BB0000D910 /* AppDelegate.swift */,
 				3BF56BD92D2945BB0000D910 /* SceneDelegate.swift */,
-				3BF56BDB2D2945BB0000D910 /* ReminderListViewController.swift */,
+				3BF56C0C2D295B8C0000D910 /* ListViewController */,
 				3BF56BDD2D2945BB0000D910 /* Main.storyboard */,
 				3BF56BE02D2945BD0000D910 /* Assets.xcassets */,
 				3BF56BE22D2945BD0000D910 /* LaunchScreen.storyboard */,
@@ -134,8 +138,18 @@
 			isa = PBXGroup;
 			children = (
 				3BF56C082D2949710000D910 /* Reminder.swift */,
+				3BF56C0A2D2959D60000D910 /* Date+Today.swift */,
 			);
 			path = " Models";
+			sourceTree = "<group>";
+		};
+		3BF56C0C2D295B8C0000D910 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3BF56BDB2D2945BB0000D910 /* ReminderListViewController.swift */,
+				3BF56C0D2D295BAE0000D910 /* Controller+DataSource.swift */,
+			);
+			path = ListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF56C0E2D295BAE0000D910 /* Controller+DataSource.swift in Sources */,
 				3BF56BDC2D2945BB0000D910 /* ReminderListViewController.swift in Sources */,
+				3BF56C0B2D2959D60000D910 /* Date+Today.swift in Sources */,
 				3BF56BD82D2945BB0000D910 /* AppDelegate.swift in Sources */,
 				3BF56BDA2D2945BB0000D910 /* SceneDelegate.swift in Sources */,
 				3BF56C092D2949710000D910 /* Reminder.swift in Sources */,
