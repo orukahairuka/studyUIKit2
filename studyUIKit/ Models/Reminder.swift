@@ -16,6 +16,7 @@ struct Reminder: Identifiable {
 }
 
 extension [Reminder] {
+    //idを引数にとってそのidと一致するリマインダーのインデックスを返す
     func indexOfReminder(withId id: Reminder.ID) -> Self.Index {
         guard let index = firstIndex(where: { $0.id == id}) else {
             fatalError()

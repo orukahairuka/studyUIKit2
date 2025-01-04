@@ -36,17 +36,20 @@ extension ReminderListViewController {
         backgroundConfiguration.backgroundColor = .todayListCellBackground
         cell.backgroundConfiguration = backgroundConfiguration
     }
-
+    
+    //リマインダーの配列から指定したidを持つリマインダーを返す
     func reminder(withId id: Reminder.ID) -> Reminder {
         let index = reminders.indexOfReminder(withId: id)
         return reminders[index]
     }
 
+    //指定されたリマインダーで、同じidを持つリマインダーを更新する
     func updateReminder(_ reminder: Reminder) {
         let index = reminders.indexOfReminder(withId: reminder.id)
         reminders[index] = reminder
     }
 
+    //リマインダー完了状態のトグルを反転する
     func completeReminder(withId id: Reminder.ID) {
         var reminder = reminder(withId: id)
         reminder.isComplete.toggle()
