@@ -19,6 +19,7 @@
 		3BF56C092D2949710000D910 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C082D2949710000D910 /* Reminder.swift */; };
 		3BF56C0B2D2959D60000D910 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C0A2D2959D60000D910 /* Date+Today.swift */; };
 		3BF56C0E2D295BAE0000D910 /* Controller+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C0D2D295BAE0000D910 /* Controller+DataSource.swift */; };
+		3BF56C102D296BCF0000D910 /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF56C0F2D296BCF0000D910 /* ReminderDoneButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3BF56C082D2949710000D910 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		3BF56C0A2D2959D60000D910 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		3BF56C0D2D295BAE0000D910 /* Controller+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+DataSource.swift"; sourceTree = "<group>"; };
+		3BF56C0F2D296BCF0000D910 /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				3BF56BDB2D2945BB0000D910 /* ReminderListViewController.swift */,
 				3BF56C0D2D295BAE0000D910 /* Controller+DataSource.swift */,
+				3BF56C0F2D296BCF0000D910 /* ReminderDoneButton.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				3BF56C0B2D2959D60000D910 /* Date+Today.swift in Sources */,
 				3BF56BD82D2945BB0000D910 /* AppDelegate.swift in Sources */,
 				3BF56BDA2D2945BB0000D910 /* SceneDelegate.swift in Sources */,
+				3BF56C102D296BCF0000D910 /* ReminderDoneButton.swift in Sources */,
 				3BF56C092D2949710000D910 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
